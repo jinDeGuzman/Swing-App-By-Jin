@@ -77,6 +77,16 @@ public class Main
     panel1.add(textfield2);
     panel1.add(label3);
     panel1.add(button3);
+
+    //Panel 2
+    JPanel panel2 = new JPanel(new BorderLayout(10, 10));
+
+    //Add image
+    ImageIcon bookImg = new ImageIcon("book.png");
+    JLabel bookLabelPic = new JLabel(bookImg);
+    panel2.add(bookLabelPic);
+
     frame1.getContentPane().add(BorderLayout.NORTH, panel1);
+    frame1.getContentPane().add(BorderLayout.CENTER, panel2);
   }//end main method
 }//end main class
